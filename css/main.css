@@ -19,15 +19,63 @@ html {
 }
 
 ul {
-
+  margin: 0;
+  margin-bottom: 1.3rem;
+  padding: 0;
 }
 
 ul li {
   list-style-type: none;
-  display: inline-block;
-  width: 32%;
+  display: block;
+  margin-bottom: 1.3rem;
+}
+
+ul div {
+  margin-bottom: 1.3rem;
 }
 
 ul img {
-  width: 32%;
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.card-body h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.card-body p {
+  margin: 0 0 1.3rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  ul {
+    margin-bottom: 1.4rem;
+  }
+
+  ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: 32%;
+    margin-bottom: 1.4rem;
+  }
+
+  ul div {
+    margin-bottom: 1.4rem;
+  }
+
+  ul img {
+    width: 50px;
+    margin: 0 auto;
+  }
+
+  ul h2 {
+    margin-bottom: 1.4rem;
+  }
+
+  ul p {
+    margin-bottom: 1.4rem;
+  }
 }
