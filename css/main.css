@@ -18,23 +18,23 @@ html {
   box-sizing: inherit;
 }
 
-ul {
+.cards {
   margin: 0;
   margin-bottom: 1.3rem;
   padding: 0;
 }
 
-ul li {
+.cards li {
   list-style-type: none;
   display: block;
   margin-bottom: 1.3rem;
 }
 
-ul div {
+.cards div {
   margin-bottom: 1.3rem;
 }
 
-ul img {
+.cards img {
   display: block;
   width: 50px;
   margin: 0 auto;
@@ -48,34 +48,68 @@ ul img {
 .card-body p {
   margin: 0 0 1.3rem;
 }
+@media only screen and (min-width: 25em) {
+
+
+  .card {
+      display: inline-block;
+  }
+
+  .card-img {
+    display: inline-block;
+    margin: 0;
+    width: 15%;
+  }
+
+  .cards .card {
+    margin: 0;
+  }
+
+  .card-img img {
+    margin: 0;
+  }
+  .card-body {
+    display: inline-block;
+    margin: 0;
+    width: 80%;
+  }
+
+  .cards p {
+    margin-bottom: 0;
+  }
+}
 
 @media only screen and (min-width: 38em) {
 
-  ul {
+  html {
+    font-size: 110%;
+  }
+
+  .cards {
     margin-bottom: 1.4rem;
   }
 
-  ul li {
+  .cards li {
     list-style-type: none;
     display: inline-block;
     width: 32%;
     margin-bottom: 1.4rem;
   }
 
-  ul div {
+  .cards div {
     margin-bottom: 1.4rem;
   }
 
-  ul img {
+  .cards img {
     width: 50px;
     margin: 0 auto;
   }
 
-  ul h2 {
+  .cards h2 {
     margin-bottom: 1.4rem;
   }
 
-  ul p {
+  .cards p {
     margin-bottom: 1.4rem;
   }
 }
