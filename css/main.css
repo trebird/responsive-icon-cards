@@ -18,22 +18,30 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin-bottom: 0;
+}
+
+.card {
+  display: inline-block;
+}
+
 .cards {
   margin: 0;
-  margin-bottom: 1.3rem;
+  margin-bottom: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .cards li {
-  margin-bottom: 1.3rem;
+  margin-bottom: 0;
 }
 
 .cards div {
   margin-bottom: 1.3rem;
 }
 
-.cards img {
+.card-img img {
   display: block;
   width: 50px;
   margin: 0 auto;
@@ -45,7 +53,7 @@ html {
 }
 
 .card-body p {
-  margin: 0 0 1.3rem;
+  margin: 0;
 }
 
 @media only screen and (min-width: 25em) {
@@ -74,12 +82,17 @@ html {
   }
 
   img {
+    display: block;
     margin: 0;
   }
 
   .card-body {
     display: inline-block;
     width: 80%;
+  }
+
+  .card .card-body {
+    margin-bottom: 1.3rem;
   }
 
   .cards p {
@@ -159,7 +172,7 @@ html {
     display: block;
     margin-top: -.25em;
     margin-bottom: 1.4rem;
-    padding-left: 4em;
+    padding-left: 6em;
   }
 
   .cards h2 {
@@ -174,8 +187,45 @@ html {
 
 @media only screen and (min-width: 90em) {
 
+  body {
+    margin: .75em;
+  }
+
   html {
     font-size: 130%;
+  }
+
+  .cards {
+    margin-bottom: 1.5rem;
+  }
+
+  .cards li {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    width: 33%;
+  }
+
+  .card .card-img {
+    width: 20%;
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 1.4rem;
+  }
+
+  .card .card-body {
+    width: 70%;
+  }
+
+  .cards div {
+    margin-bottom: 1.5rem;
+  }
+
+  .cards h2 {
+    margin-bottom: 0;
+  }
+
+  .cards p {
+    margin-bottom: 1.5rem;
   }
 
 }
